@@ -20,4 +20,8 @@ convenience.
 
 For example, you may have an NLP engine as a faust agent consuming a
 particular Kafka topic, and all the NLP's complicated dependencies are
-wrapped-up in a Docker image, from which many containers can be initiated. 
+wrapped-up in a Docker image, from which many containers can be initiated.
+
+For now, let do a simple uppercase transformation on some text:
+
+$ faust -A faust_example send farewells 'So long my love!'
